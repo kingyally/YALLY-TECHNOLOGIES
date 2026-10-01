@@ -1,65 +1,866 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
-  <title id="title">YALLY TECH-XMD by yallytech</title>
-  <desc id="desc">Animated YALLY TECH-XMD flame logo created by yallytech</desc>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1200"
+     height="520"
+     viewBox="0 0 1200 520"
+     role="img"
+     aria-labelledby="title desc">
+
+  <title id="title">YALLYTECH</title>
+  <desc id="desc">Animated YALLYTECH futuristic technology logo</desc>
+
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#050914"/>
-      <stop offset="0.55" stop-color="#10243d"/>
-      <stop offset="1" stop-color="#24133d"/>
+
+    <!-- ========================= -->
+    <!-- BACKGROUND -->
+    <!-- ========================= -->
+
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020611"/>
+      <stop offset="45%" stop-color="#071a32"/>
+      <stop offset="100%" stop-color="#120622"/>
     </linearGradient>
-    <linearGradient id="flame" x1="0" y1="1" x2="1" y2="0">
-      <stop offset="0" stop-color="#ff3d28"/>
-      <stop offset="0.48" stop-color="#ff8a00"/>
-      <stop offset="1" stop-color="#fff0a3"/>
+
+    <!-- ========================= -->
+    <!-- YALLY GRADIENT -->
+    <!-- ========================= -->
+
+    <linearGradient id="yallyGradient"
+                    x1="0"
+                    y1="0"
+                    x2="1"
+                    y2="1">
+
+      <stop offset="0%" stop-color="#ffffff">
+        <animate
+          attributeName="stop-color"
+          values="#ffffff;#00eaff;#7c5cff;#ffffff"
+          dur="5s"
+          repeatCount="indefinite"/>
+      </stop>
+
+      <stop offset="50%" stop-color="#39d9ff">
+        <animate
+          attributeName="stop-color"
+          values="#39d9ff;#ffffff;#00ffd5;#39d9ff"
+          dur="5s"
+          repeatCount="indefinite"/>
+      </stop>
+
+      <stop offset="100%" stop-color="#087cff">
+        <animate
+          attributeName="stop-color"
+          values="#087cff;#704cff;#00cfff;#087cff"
+          dur="5s"
+          repeatCount="indefinite"/>
+      </stop>
+
     </linearGradient>
-    <linearGradient id="word" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#ffffff"/>
-      <stop offset="0.55" stop-color="#ffcf65"/>
-      <stop offset="1" stop-color="#ff6248"/>
+
+    <!-- ========================= -->
+    <!-- TECH GRADIENT -->
+    <!-- ========================= -->
+
+    <linearGradient id="techGradient"
+                    x1="0"
+                    y1="0"
+                    x2="1"
+                    y2="1">
+
+      <stop offset="0%" stop-color="#fff200">
+        <animate
+          attributeName="stop-color"
+          values="#fff200;#ff8a00;#ffe600;#fff200"
+          dur="3s"
+          repeatCount="indefinite"/>
+      </stop>
+
+      <stop offset="50%" stop-color="#ff7a00">
+        <animate
+          attributeName="stop-color"
+          values="#ff7a00;#ffd000;#ff4500;#ff7a00"
+          dur="3s"
+          repeatCount="indefinite"/>
+      </stop>
+
+      <stop offset="100%" stop-color="#ff3500">
+        <animate
+          attributeName="stop-color"
+          values="#ff3500;#ff9d00;#ffdf00;#ff3500"
+          dur="3s"
+          repeatCount="indefinite"/>
+      </stop>
+
     </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#ff4d36"/>
-      <stop offset="0.5" stop-color="#ffd166"/>
-      <stop offset="1" stop-color="#49e7d0"/>
+
+    <!-- ========================= -->
+    <!-- FLAME -->
+    <!-- ========================= -->
+
+    <linearGradient id="flameGradient"
+                    x1="0"
+                    y1="1"
+                    x2="1"
+                    y2="0">
+
+      <stop offset="0%" stop-color="#ff2600">
+        <animate
+          attributeName="stop-color"
+          values="#ff2600;#ff6500;#ff1600;#ff2600"
+          dur="2s"
+          repeatCount="indefinite"/>
+      </stop>
+
+      <stop offset="50%" stop-color="#ff9d00">
+        <animate
+          attributeName="stop-color"
+          values="#ff9d00;#ffe000;#ff7200;#ff9d00"
+          dur="2s"
+          repeatCount="indefinite"/>
+      </stop>
+
+      <stop offset="100%" stop-color="#fff8a6"/>
+
     </linearGradient>
-    <filter id="glow" x="-120%" y="-120%" width="340%" height="340%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="18" result="wide"/>
-      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="tight"/>
-      <feMerge><feMergeNode in="wide"/><feMergeNode in="tight"/><feMergeNode in="SourceGraphic"/></feMerge>
+
+    <!-- ========================= -->
+    <!-- MULTI COLOR NEON -->
+    <!-- ========================= -->
+
+    <linearGradient id="rainbowNeon"
+                    x1="0"
+                    y1="0"
+                    x2="1"
+                    y2="1">
+
+      <stop offset="0%" stop-color="#00eaff"/>
+      <stop offset="25%" stop-color="#006eff"/>
+      <stop offset="50%" stop-color="#9b4dff"/>
+      <stop offset="75%" stop-color="#ff3b00"/>
+      <stop offset="100%" stop-color="#ffd000"/>
+
+      <animateTransform
+        attributeName="gradientTransform"
+        type="rotate"
+        from="0 .5 .5"
+        to="360 .5 .5"
+        dur="4s"
+        repeatCount="indefinite"/>
+
+    </linearGradient>
+
+    <!-- ========================= -->
+    <!-- GLOW -->
+    <!-- ========================= -->
+
+    <filter id="softGlow"
+            x="-100%"
+            y="-100%"
+            width="300%"
+            height="300%">
+
+      <feGaussianBlur
+        in="SourceGraphic"
+        stdDeviation="12"
+        result="blur"/>
+
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+
     </filter>
-    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
-      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000000" flood-opacity="0.45"/>
+
+    <filter id="bigGlow"
+            x="-100%"
+            y="-100%"
+            width="300%"
+            height="300%">
+
+      <feGaussianBlur
+        in="SourceGraphic"
+        stdDeviation="24"
+        result="blur"/>
+
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+
     </filter>
+
+    <!-- ========================= -->
+    <!-- SHADOW -->
+    <!-- ========================= -->
+
+    <filter id="shadow"
+            x="-30%"
+            y="-30%"
+            width="160%"
+            height="180%">
+
+      <feDropShadow
+        dx="0"
+        dy="14"
+        stdDeviation="18"
+        flood-color="#000000"
+        flood-opacity=".65"/>
+
+    </filter>
+
+    <!-- ========================= -->
+    <!-- ANIMATIONS -->
+    <!-- ========================= -->
+
     <style>
-      .brand { font-family: Inter, Segoe UI, Arial, sans-serif; }
-      .flicker { animation: flicker 1.8s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: center bottom; }
-      .breathe { animation: breathe 2.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
-      .credit { animation: credit 3s ease-in-out infinite; }
-      @keyframes flicker { from { transform: scaleY(.93) rotate(-2deg); } to { transform: scaleY(1.07) rotate(2deg); } }
-      @keyframes breathe { 0%,100% { opacity: .35; transform: scale(.94); } 50% { opacity: .9; transform: scale(1.08); } }
-      @keyframes credit { 0%,100% { opacity: .72; letter-spacing: 4px; } 50% { opacity: 1; letter-spacing: 6px; } }
-      @media (prefers-reduced-motion: reduce) { .flicker, .breathe, .credit { animation: none; } }
+
+      .brand {
+        font-family:
+          Inter,
+          Segoe UI,
+          Arial,
+          sans-serif;
+      }
+
+      .floating {
+        animation:
+          floating 4s ease-in-out infinite;
+        transform-box: fill-box;
+        transform-origin: center;
+      }
+
+      .flame {
+        animation:
+          flameAnimation 1.5s ease-in-out infinite alternate;
+        transform-box: fill-box;
+        transform-origin: center bottom;
+      }
+
+      .pulse {
+        animation:
+          pulse 2.4s ease-in-out infinite;
+        transform-box: fill-box;
+        transform-origin: center;
+      }
+
+      .shine {
+        animation:
+          shine 3s linear infinite;
+      }
+
+      .credit {
+        animation:
+          creditAnimation 3s ease-in-out infinite;
+      }
+
+      @keyframes floating {
+
+        0%,100% {
+          transform: translateY(0);
+        }
+
+        50% {
+          transform: translateY(-8px);
+        }
+
+      }
+
+      @keyframes flameAnimation {
+
+        0% {
+          transform:
+            scaleY(.90)
+            rotate(-3deg);
+        }
+
+        50% {
+          transform:
+            scaleY(1.08)
+            rotate(2deg);
+        }
+
+        100% {
+          transform:
+            scaleY(.96)
+            rotate(-2deg);
+        }
+
+      }
+
+      @keyframes pulse {
+
+        0%,100% {
+          opacity: .35;
+          transform: scale(.94);
+        }
+
+        50% {
+          opacity: 1;
+          transform: scale(1.08);
+        }
+
+      }
+
+      @keyframes shine {
+
+        0% {
+          opacity: 0;
+          transform: translateX(-100px);
+        }
+
+        30% {
+          opacity: .9;
+        }
+
+        70% {
+          opacity: .9;
+        }
+
+        100% {
+          opacity: 0;
+          transform: translateX(650px);
+        }
+
+      }
+
+      @keyframes creditAnimation {
+
+        0%,100% {
+          opacity: .65;
+          letter-spacing: 4px;
+        }
+
+        50% {
+          opacity: 1;
+          letter-spacing: 7px;
+        }
+
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+
+        .floating,
+        .flame,
+        .pulse,
+        .shine,
+        .credit {
+          animation: none;
+        }
+
+      }
+
     </style>
+
   </defs>
-  <rect width="1200" height="520" rx="44" fill="url(#bg)"/>
-  <circle class="breathe" cx="1060" cy="70" r="220" fill="#49e7d0" opacity=".18" filter="url(#glow)"/>
-  <circle class="breathe" cx="1060" cy="455" r="250" fill="#ff4d36" opacity=".16" filter="url(#glow)"/>
-  <path d="M0 458 C250 415 420 500 680 450 S1030 416 1200 452" fill="none" stroke="#49e7d0" stroke-opacity=".2" stroke-width="2"/>
-  <g transform="translate(82 78)" filter="url(#shadow)">
-    <circle class="breathe" cx="116" cy="145" r="110" fill="#ff8a00" opacity=".34" filter="url(#glow)"/>
-    <g class="flicker" filter="url(#glow)">
-      <path d="M116 4c18 53-12 74-37 99-22 22-30 44-20 67 8 18 27 30 49 30 39 0 69-30 69-70 0-32-17-63-61-126z" fill="url(#flame)"/>
-      <path d="M93 105c-25 25-39 46-33 67 5 17 18 28 36 28 27 0 47-22 47-48 0-17-9-34-28-55-5 14-10 18-22 8z" fill="#fff4c2" opacity=".95"/>
+
+
+  <!-- ================================= -->
+  <!-- MAIN BACKGROUND -->
+  <!-- ================================= -->
+
+  <rect
+    width="1200"
+    height="520"
+    rx="44"
+    fill="url(#background)"/>
+
+
+  <!-- ================================= -->
+  <!-- MOVING BACKGROUND LIGHTS -->
+  <!-- ================================= -->
+
+  <circle
+    class="pulse"
+    cx="1050"
+    cy="70"
+    r="190"
+    fill="#0077ff"
+    opacity=".16"
+    filter="url(#bigGlow)"/>
+
+  <circle
+    class="pulse"
+    cx="1080"
+    cy="450"
+    r="220"
+    fill="#ff4d00"
+    opacity=".15"
+    filter="url(#bigGlow)"/>
+
+  <circle
+    class="pulse"
+    cx="150"
+    cy="430"
+    r="150"
+    fill="#00eaff"
+    opacity=".12"
+    filter="url(#bigGlow)"/>
+
+
+  <!-- ================================= -->
+  <!-- TOP DECORATION -->
+  <!-- ================================= -->
+
+  <path
+    d="M0 0 L170 0 L95 70 L0 145 Z"
+    fill="#006eff"
+    opacity=".55"/>
+
+  <path
+    d="M0 0 L125 0 L55 65 L0 115 Z"
+    fill="#ff7200"
+    opacity=".75"/>
+
+  <path
+    d="M1200 0 L1060 0 L1135 70 L1200 130 Z"
+    fill="#ff7600"
+    opacity=".75"/>
+
+  <path
+    d="M1200 0 L1100 0 L1165 55 L1200 90 Z"
+    fill="#008cff"
+    opacity=".65"/>
+
+
+  <!-- ================================= -->
+  <!-- DOT MATRIX -->
+  <!-- ================================= -->
+
+  <g fill="#00d9ff" opacity=".8">
+
+    <circle cx="60" cy="90" r="3"/>
+    <circle cx="85" cy="90" r="3"/>
+    <circle cx="110" cy="90" r="3"/>
+
+    <circle cx="60" cy="115" r="3"/>
+    <circle cx="85" cy="115" r="3"/>
+    <circle cx="110" cy="115" r="3"/>
+
+    <circle cx="60" cy="140" r="3"/>
+    <circle cx="85" cy="140" r="3"/>
+    <circle cx="110" cy="140" r="3"/>
+
+  </g>
+
+
+  <g fill="#ff7a00" opacity=".8">
+
+    <circle cx="1080" cy="370" r="3"/>
+    <circle cx="1105" cy="370" r="3"/>
+    <circle cx="1130" cy="370" r="3"/>
+    <circle cx="1155" cy="370" r="3"/>
+
+    <circle cx="1080" cy="395" r="3"/>
+    <circle cx="1105" cy="395" r="3"/>
+    <circle cx="1130" cy="395" r="3"/>
+    <circle cx="1155" cy="395" r="3"/>
+
+    <circle cx="1080" cy="420" r="3"/>
+    <circle cx="1105" cy="420" r="3"/>
+    <circle cx="1130" cy="420" r="3"/>
+    <circle cx="1155" cy="420" r="3"/>
+
+  </g>
+
+
+  <!-- ================================= -->
+  <!-- YALLYTECH SYMBOL -->
+  <!-- ================================= -->
+
+  <g
+    transform="translate(55 135)"
+    class="floating"
+    filter="url(#shadow)">
+
+    <!-- Rotating ring -->
+
+    <circle
+      cx="125"
+      cy="125"
+      r="125"
+      fill="none"
+      stroke="url(#rainbowNeon)"
+      stroke-width="7"
+      stroke-linecap="round"
+      stroke-dasharray="240 65 90 45"
+      filter="url(#softGlow)">
+
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        from="0 125 125"
+        to="360 125 125"
+        dur="5s"
+        repeatCount="indefinite"/>
+
+    </circle>
+
+
+    <!-- Y -->
+
+    <path
+      d="
+      M25 50
+      L72 50
+      L108 95
+      L145 50
+      L195 50
+      L130 125
+      L130 210
+      L84 210
+      L84 125
+      Z"
+      fill="url(#yallyGradient)"
+      filter="url(#softGlow)"/>
+
+
+    <!-- T -->
+
+    <path
+      d="
+      M105 125
+      L200 70
+      L250 70
+      L158 125
+      L158 210
+      L105 210
+      Z"
+      fill="url(#techGradient)"
+      filter="url(#softGlow)"/>
+
+
+    <!-- Flame -->
+
+    <g
+      class="flame"
+      transform="translate(67 -76)"
+      filter="url(#bigGlow)">
+
+      <path
+        d="
+        M105 0
+        C124 48 99 70 76 92
+        C53 114 46 135 58 154
+        C67 170 84 180 104 180
+        C139 180 166 151 166 116
+        C166 82 146 45 105 0
+        Z"
+        fill="url(#flameGradient)"/>
+
+      <path
+        d="
+        M91 94
+        C68 116 62 136 70 150
+        C76 161 87 167 99 167
+        C120 167 136 149 136 128
+        C136 112 127 98 113 84
+        C108 96 101 101 91 94
+        Z"
+        fill="#fff6bd"/>
+
     </g>
-    <circle cx="75" cy="220" r="6" fill="#ff633f" opacity=".85"/>
-    <circle cx="158" cy="218" r="7" fill="#ffe08a" opacity=".9"/>
+
   </g>
-  <g class="brand" transform="translate(310 0)">
-    <text x="0" y="190" fill="url(#word)" font-size="96" font-weight="900" letter-spacing="5">MSELA CHUI XMD</text>
-    <text x="0" y="300" fill="#ffffff" font-size="82" font-weight="800" letter-spacing="7">TECH</text>
-    <rect x="5" y="326" width="560" height="5" rx="3" fill="url(#accent)" opacity=".9">
-      <animate attributeName="width" values="360;560;360" dur="3s" repeatCount="indefinite"/>
+
+
+  <!-- ================================= -->
+  <!-- YALLYTECH TEXT -->
+  <!-- ================================= -->
+
+  <g
+    class="brand"
+    transform="translate(330 0)"
+    filter="url(#shadow)">
+
+    <!-- YALLY -->
+
+    <text
+      x="0"
+      y="188"
+      font-size="94"
+      font-weight="900"
+      letter-spacing="3"
+      fill="url(#yallyGradient)">
+
+      YALLY
+
+    </text>
+
+
+    <!-- TECH -->
+
+    <text
+      x="355"
+      y="188"
+      font-size="94"
+      font-weight="900"
+      letter-spacing="3"
+      fill="url(#techGradient)">
+
+      TECH
+
+    </text>
+
+
+    <!-- Moving shine -->
+
+    <rect
+      class="shine"
+      x="-70"
+      y="100"
+      width="9"
+      height="100"
+      rx="5"
+      fill="#ffffff"
+      opacity=".8"
+      filter="url(#softGlow)"/>
+
+
+    <!-- ================================= -->
+    <!-- SLOGAN -->
+    <!-- ================================= -->
+
+    <text
+      x="4"
+      y="252"
+      fill="#ffffff"
+      font-size="23"
+      font-weight="600"
+      letter-spacing="6">
+
+      TECHNOLOGY FOR A BETTER TOMORROW
+
+    </text>
+
+
+    <!-- ================================= -->
+    <!-- ANIMATED NEON LINE -->
+    <!-- ================================= -->
+
+    <rect
+      x="5"
+      y="280"
+      width="650"
+      height="5"
+      rx="3"
+      fill="url(#rainbowNeon)"
+      filter="url(#softGlow)">
+
+      <animate
+        attributeName="width"
+        values="280;650;280"
+        dur="3s"
+        repeatCount="indefinite"/>
+
     </rect>
-    <text class="credit" x="5" y="405" fill="#ffe08a" font-size="22" font-weight="800" letter-spacing="4">CRAFTED BY 𝐌selachui</text>
+
+
+    <!-- ================================= -->
+    <!-- FEATURES -->
+    <!-- ================================= -->
+
+    <g transform="translate(5 320)">
+
+      <!-- FAST -->
+
+      <circle
+        cx="20"
+        cy="10"
+        r="19"
+        fill="none"
+        stroke="#00eaff"
+        stroke-width="3"
+        class="pulse"/>
+
+      <text
+        x="50"
+        y="18"
+        fill="#ffffff"
+        font-size="21"
+        font-weight="800">
+
+        FAST
+
+      </text>
+
+
+      <!-- divider -->
+
+      <rect
+        x="135"
+        y="-10"
+        width="2"
+        height="40"
+        fill="#ffffff"
+        opacity=".3"/>
+
+
+      <!-- SECURE -->
+
+      <circle
+        cx="180"
+        cy="10"
+        r="19"
+        fill="none"
+        stroke="#ffb300"
+        stroke-width="3"
+        class="pulse"/>
+
+      <text
+        x="210"
+        y="18"
+        fill="#ffffff"
+        font-size="21"
+        font-weight="800">
+
+        SECURE
+
+      </text>
+
+
+      <!-- divider -->
+
+      <rect
+        x="330"
+        y="-10"
+        width="2"
+        height="40"
+        fill="#ffffff"
+        opacity=".3"/>
+
+
+      <!-- MODERN -->
+
+      <circle
+        cx="375"
+        cy="10"
+        r="19"
+        fill="none"
+        stroke="#00ffd5"
+        stroke-width="3"
+        class="pulse"/>
+
+      <text
+        x="405"
+        y="18"
+        fill="#ffffff"
+        font-size="21"
+        font-weight="800">
+
+        MODERN
+
+      </text>
+
+
+      <!-- divider -->
+
+      <rect
+        x="535"
+        y="-10"
+        width="2"
+        height="40"
+        fill="#ffffff"
+        opacity=".3"/>
+
+
+      <!-- RELIABLE -->
+
+      <circle
+        cx="580"
+        cy="10"
+        r="19"
+        fill="none"
+        stroke="#a855f7"
+        stroke-width="3"
+        class="pulse"/>
+
+      <text
+        x="610"
+        y="18"
+        fill="#ffffff"
+        font-size="21"
+        font-weight="800">
+
+        RELIABLE
+
+      </text>
+
+    </g>
+
+
+    <!-- ================================= -->
+    <!-- CREDIT -->
+    <!-- ================================= -->
+
+    <text
+      class="credit"
+      x="5"
+      y="435"
+      fill="#ffd166"
+      font-size="22"
+      font-weight="800"
+      letter-spacing="4">
+
+      CRAFTED BY YALLYTECH
+
+    </text>
+
   </g>
+
+
+  <!-- ================================= -->
+  <!-- BOTTOM NEON WAVE -->
+  <!-- ================================= -->
+
+  <path
+    d="
+    M0 475
+    C220 430
+    390 500
+    600 462
+    S1000 430
+    1200 470"
+    fill="none"
+    stroke="url(#rainbowNeon)"
+    stroke-width="4"
+    opacity=".75"
+    filter="url(#softGlow)"/>
+
+
+  <!-- ================================= -->
+  <!-- MOVING LIGHT PARTICLE -->
+  <!-- ================================= -->
+
+  <circle
+    r="6"
+    fill="#ffffff"
+    filter="url(#softGlow)">
+
+    <animateMotion
+      dur="5s"
+      repeatCount="indefinite"
+      path="
+      M0 475
+      C220 430
+      390 500
+      600 462
+      S1000 430
+      1200 470"/>
+
+  </circle>
+
+
+  <!-- ================================= -->
+  <!-- CORNER ACCENTS -->
+  <!-- ================================= -->
+
+  <path
+    d="M0 520 L150 520 L75 445 L0 445 Z"
+    fill="#005cff"
+    opacity=".65"/>
+
+  <path
+    d="M1200 520 L1050 520 L1125 445 L1200 445 Z"
+    fill="#ff5a00"
+    opacity=".65"/>
+
 </svg>
