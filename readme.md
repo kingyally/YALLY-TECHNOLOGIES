@@ -1,7 +1,7 @@
 <div align="center">
-  <img src="public/msela-chui-xmd-logo.svg" width="760" alt="Animated YALLY-TECH-𝐗𝐌𝐃 logo" />
+  <img src="public/yally-tech-xmd-logo.svg" width="760" alt="Animated YALLY-TECH-𝐗𝐌𝐃 logo" />
   <br />
-  <img src="public/msela-chui-xmd-logo.svg" width="680" alt="Animated YALLY-TECH-𝐗𝐌𝐃 logo" />
+  <img src="public/yally-tech-xmd-logo.svg" width="680" alt="Animated YALLY-TECH-𝐗𝐌𝐃 logo" />
   <h1><span style="color:#ff8a3d; font-family:Georgia,serif; letter-spacing:3px;">YALLY TECH XMD</span><span style="color:#2dd4bf; font-family:Georgia,serif; letter-spacing:3px;">-XMD</span></h1>
   <p><strong>YALLY TECH XMD</strong> <em>repository</em></p>
   <p>
@@ -14,7 +14,7 @@
 
 YALLY-TECH-𝐗𝐌𝐃 is a modular WhatsApp automation project with command plugins, group utilities, media tools, search features, and configurable bot behavior. The project is organized so new commands can be added without disturbing the existing command registry.
 
-> **Project identity:** 𝐌𝐒𝐄𝐋𝐀-𝐂𝐇𝐔𝐈-𝐗𝐌𝐃 is the bot name. The source repository is **YALLY-YECH-𝐗𝐌𝐃**.
+> **Project identity:** YALLY-TECH-𝐗𝐌𝐃 is the bot name. The source repository is **YALLY-YECH-𝐗𝐌𝐃**.
 
 <p align="center">
   <a href="https://github.com/shadricksanga7-hub/MSELA-CHUI-TECHNOLOGIES/fork">
