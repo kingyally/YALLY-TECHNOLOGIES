@@ -1,9 +1,21 @@
 <div align="center">
-  <img src="public/yally-tech-xmd-logo.svg" width="760" alt="Animated YALLY-TECH-𝐗𝐌𝐃 logo" />
+  <img src="public/msela-chui-xmd-logo.svg" width="760" alt="Animated YALLY TECH logo" />
   <br />
-  <img src="public/yally-tech-xmd-logo.svg" width="680" alt="Animated YALLY-TECH-𝐗𝐌𝐃 logo" />
-  <h1><span style="color:#ff8a3d; font-family:Georgia,serif; letter-spacing:3px;">YALLY TECH XMD</span><span style="color:#2dd4bf; font-family:Georgia,serif; letter-spacing:3px;">-XMD</span></h1>
-  <p><strong>YALLY TECH XMD</strong> <em>repository</em></p>
+  <img src="public/msela-chui-xmd-logo.svg" width="680" alt="Animated YALLY TECH logo" />
+
+  <h1>
+    <span style="color:#ff8a3d; font-family:Georgia,serif; letter-spacing:3px;">
+      YALLY TECH
+    </span>
+    <span style="color:#2dd4bf; font-family:Georgia,serif; letter-spacing:3px;">
+      -XMD
+    </span>
+  </h1>
+
+  <p>
+    <strong>YALLY TECH</strong> <em>repository</em>
+  </p>
+
   <p>
     <img src="https://img.shields.io/badge/WHATSAPP%20AUTOMATION-07111f?style=for-the-badge&logo=whatsapp&logoColor=white&labelColor=ff6b35" alt="WhatsApp automation" />
     <img src="https://img.shields.io/badge/FAST%20%7C%20MODERN%20%7C%20RELIABLE-102a43?style=for-the-badge&labelColor=2dd4bf" alt="Fast modern reliable" />
